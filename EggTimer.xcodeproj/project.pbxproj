@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22AE9D6407D031221FF47CCD /* Pods_EggTimer_EggTimerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A75375FC56DD09EE43639C /* Pods_EggTimer_EggTimerUITests.framework */; };
 		A5744323298003F700F03B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744322298003F700F03B8E /* AppDelegate.swift */; };
 		A5744325298003F700F03B8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744324298003F700F03B8E /* SceneDelegate.swift */; };
 		A5744327298003F700F03B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744326298003F700F03B8E /* ViewController.swift */; };
@@ -16,6 +17,11 @@
 		A574433A298003F900F03B8E /* EggTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744339298003F900F03B8E /* EggTimerTests.swift */; };
 		A5744344298003F900F03B8E /* EggTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744343298003F900F03B8E /* EggTimerUITests.swift */; };
 		A5744346298003F900F03B8E /* EggTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5744345298003F900F03B8E /* EggTimerUITestsLaunchTests.swift */; };
+		A57443542980358400F03B8E /* LabelProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57443532980358400F03B8E /* LabelProperty.swift */; };
+		A574435629803DE400F03B8E /* ButtonProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A574435529803DE400F03B8E /* ButtonProperty.swift */; };
+		A57443582980455F00F03B8E /* ImageViewProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57443572980455F00F03B8E /* ImageViewProperty.swift */; };
+		B63AB2F9BBA816F39DB16022 /* Pods_EggTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BBBC0AB0255CD31A6CB24A /* Pods_EggTimer.framework */; };
+		F0F46816A85A8AEA65B5ED10 /* Pods_EggTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9BA3DE94CCBF288E12B3F2 /* Pods_EggTimerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB7E49B8F320143C96045C4 /* Pods-EggTimer-EggTimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer-EggTimerUITests.release.xcconfig"; path = "Target Support Files/Pods-EggTimer-EggTimerUITests/Pods-EggTimer-EggTimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		29DF7D2FF5E28D9CE4A34E2D /* Pods-EggTimer-EggTimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer-EggTimerUITests.debug.xcconfig"; path = "Target Support Files/Pods-EggTimer-EggTimerUITests/Pods-EggTimer-EggTimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ABB0F06EE43B4412FD9BB15 /* Pods-EggTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimerTests.debug.xcconfig"; path = "Target Support Files/Pods-EggTimerTests/Pods-EggTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76A75375FC56DD09EE43639C /* Pods_EggTimer_EggTimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggTimer_EggTimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5B10EC87C1D6B522083953 /* Pods-EggTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimerTests.release.xcconfig"; path = "Target Support Files/Pods-EggTimerTests/Pods-EggTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		96BBBC0AB0255CD31A6CB24A /* Pods_EggTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9BA3DE94CCBF288E12B3F2 /* Pods_EggTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A574431F298003F700F03B8E /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5744322298003F700F03B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5744324298003F700F03B8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		A574433F298003F900F03B8E /* EggTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5744343298003F900F03B8E /* EggTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerUITests.swift; sourceTree = "<group>"; };
 		A5744345298003F900F03B8E /* EggTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A57443532980358400F03B8E /* LabelProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProperty.swift; sourceTree = "<group>"; };
+		A574435529803DE400F03B8E /* ButtonProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProperty.swift; sourceTree = "<group>"; };
+		A57443572980455F00F03B8E /* ImageViewProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewProperty.swift; sourceTree = "<group>"; };
+		D07BF4402FF6FD15EF8E611B /* Pods-EggTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.release.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.release.xcconfig"; sourceTree = "<group>"; };
+		E4745A4EB8FD8A1F120171DB /* Pods-EggTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.debug.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63AB2F9BBA816F39DB16022 /* Pods_EggTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F46816A85A8AEA65B5ED10 /* Pods_EggTimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AE9D6407D031221FF47CCD /* Pods_EggTimer_EggTimerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4639226D71023633AD52EDDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4745A4EB8FD8A1F120171DB /* Pods-EggTimer.debug.xcconfig */,
+				D07BF4402FF6FD15EF8E611B /* Pods-EggTimer.release.xcconfig */,
+				29DF7D2FF5E28D9CE4A34E2D /* Pods-EggTimer-EggTimerUITests.debug.xcconfig */,
+				0AB7E49B8F320143C96045C4 /* Pods-EggTimer-EggTimerUITests.release.xcconfig */,
+				4ABB0F06EE43B4412FD9BB15 /* Pods-EggTimerTests.debug.xcconfig */,
+				8E5B10EC87C1D6B522083953 /* Pods-EggTimerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A5744316298003F700F03B8E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 				A5744338298003F900F03B8E /* EggTimerTests */,
 				A5744342298003F900F03B8E /* EggTimerUITests */,
 				A5744320298003F700F03B8E /* Products */,
+				4639226D71023633AD52EDDB /* Pods */,
+				D633838C0BE564DA2D5C5DCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +135,7 @@
 		A5744321298003F700F03B8E /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A57443522980354F00F03B8E /* Service */,
 				A5744322298003F700F03B8E /* AppDelegate.swift */,
 				A5744324298003F700F03B8E /* SceneDelegate.swift */,
 				A5744326298003F700F03B8E /* ViewController.swift */,
@@ -127,6 +164,26 @@
 			path = EggTimerUITests;
 			sourceTree = "<group>";
 		};
+		A57443522980354F00F03B8E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A57443532980358400F03B8E /* LabelProperty.swift */,
+				A57443572980455F00F03B8E /* ImageViewProperty.swift */,
+				A574435529803DE400F03B8E /* ButtonProperty.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D633838C0BE564DA2D5C5DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96BBBC0AB0255CD31A6CB24A /* Pods_EggTimer.framework */,
+				76A75375FC56DD09EE43639C /* Pods_EggTimer_EggTimerUITests.framework */,
+				9C9BA3DE94CCBF288E12B3F2 /* Pods_EggTimerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5744349298003F900F03B8E /* Build configuration list for PBXNativeTarget "EggTimer" */;
 			buildPhases = (
+				5A2B335D7DE1B792605873F9 /* [CP] Check Pods Manifest.lock */,
 				A574431B298003F700F03B8E /* Sources */,
 				A574431C298003F700F03B8E /* Frameworks */,
 				A574431D298003F700F03B8E /* Resources */,
+				908128546713FF3ED6CEE995 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A574434C298003F900F03B8E /* Build configuration list for PBXNativeTarget "EggTimerTests" */;
 			buildPhases = (
+				3CA0F5BFB60A321F302BA87F /* [CP] Check Pods Manifest.lock */,
 				A5744331298003F900F03B8E /* Sources */,
 				A5744332298003F900F03B8E /* Frameworks */,
 				A5744333298003F900F03B8E /* Resources */,
+				F281A36024C8D2D7E6F18A63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A574434F298003F900F03B8E /* Build configuration list for PBXNativeTarget "EggTimerUITests" */;
 			buildPhases = (
+				5C31C6717C842A06EE6F8A39 /* [CP] Check Pods Manifest.lock */,
 				A574433B298003F900F03B8E /* Sources */,
 				A574433C298003F900F03B8E /* Frameworks */,
 				A574433D298003F900F03B8E /* Resources */,
+				2DCBB8AA2BE887D4625697E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +316,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DCBB8AA2BE887D4625697E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer-EggTimerUITests/Pods-EggTimer-EggTimerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer-EggTimerUITests/Pods-EggTimer-EggTimerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EggTimer-EggTimerUITests/Pods-EggTimer-EggTimerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CA0F5BFB60A321F302BA87F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EggTimerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2B335D7DE1B792605873F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EggTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C31C6717C842A06EE6F8A39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EggTimer-EggTimerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908128546713FF3ED6CEE995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F281A36024C8D2D7E6F18A63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimerTests/Pods-EggTimerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimerTests/Pods-EggTimerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EggTimerTests/Pods-EggTimerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A574431B298003F700F03B8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +443,10 @@
 			files = (
 				A5744327298003F700F03B8E /* ViewController.swift in Sources */,
 				A5744323298003F700F03B8E /* AppDelegate.swift in Sources */,
+				A574435629803DE400F03B8E /* ButtonProperty.swift in Sources */,
+				A57443582980455F00F03B8E /* ImageViewProperty.swift in Sources */,
 				A5744325298003F700F03B8E /* SceneDelegate.swift in Sources */,
+				A57443542980358400F03B8E /* LabelProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +618,7 @@
 		};
 		A574434A298003F900F03B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4745A4EB8FD8A1F120171DB /* Pods-EggTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,8 +630,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,14 +640,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zvontsov-adadigital.ru.EggTimer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A574434B298003F900F03B8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07BF4402FF6FD15EF8E611B /* Pods-EggTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,8 +663,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,14 +673,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zvontsov-adadigital.ru.EggTimer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A574434D298003F900F03B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABB0F06EE43B4412FD9BB15 /* Pods-EggTimerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +705,7 @@
 		};
 		A574434E298003F900F03B8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5B10EC87C1D6B522083953 /* Pods-EggTimerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +726,7 @@
 		};
 		A5744350298003F900F03B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DF7D2FF5E28D9CE4A34E2D /* Pods-EggTimer-EggTimerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +745,7 @@
 		};
 		A5744351298003F900F03B8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB7E49B8F320143C96045C4 /* Pods-EggTimer-EggTimerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
