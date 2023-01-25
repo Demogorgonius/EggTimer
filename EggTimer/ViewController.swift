@@ -31,32 +31,32 @@ class ViewController: UIViewController {
         return label
     }()
     
-    lazy var softTitle: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.textAlignment = .center
-        label.text = "Soft"
-        return label
-    }()
-    
-    lazy var mediumTitle: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.textAlignment = .center
-        label.text = "Medium"
-        return label
-    }()
-    
-    lazy var hardTitle: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.textAlignment = .center
-        label.text = "Hard"
-        return label
-    }()
+//    lazy var softTitle: UILabel = {
+//        let label = UILabel()
+//        label.textColor = .white
+//        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+//        label.textAlignment = .center
+//        label.text = "Soft"
+//        return label
+//    }()
+//
+//    lazy var mediumTitle: UILabel = {
+//        let label = UILabel()
+//        label.textColor = .white
+//        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+//        label.textAlignment = .center
+//        label.text = "Medium"
+//        return label
+//    }()
+//
+//    lazy var hardTitle: UILabel = {
+//        let label = UILabel()
+//        label.textColor = .white
+//        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+//        label.textAlignment = .center
+//        label.text = "Hard"
+//        return label
+//    }()
     
     //MARK: - Views/StackView
     
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
         let view = UIView(frame: ImageViewProperty().imageViewFrame)
         view.contentMode = .scaleToFill
         view.backgroundColor = .clear
-        view.addSubview(softEggButton)
+        view.addSubview(softEggImageView)
         return view
     }()
     
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
         let view = UIView(frame: ImageViewProperty().imageViewFrame)
         view.contentMode = .scaleToFill
         view.backgroundColor = .clear
-        view.addSubview(mediumEggButton)
+        view.addSubview(mediumEggImageView)
         return view
     }()
     
@@ -116,7 +116,7 @@ class ViewController: UIViewController {
         let view = UIView(frame: ImageViewProperty().imageViewFrame)
         view.contentMode = .scaleToFill
         view.backgroundColor = .clear
-        view.addSubview(hardEggButton)
+        view.addSubview(hardEggImageView)
         return view
     }()
     
@@ -125,6 +125,7 @@ class ViewController: UIViewController {
         let imageView = UIImageView(frame: ImageViewProperty().imageViewFrame)
         imageView.contentMode = .scaleAspectFit
         imageView.image = #imageLiteral(resourceName: "soft_egg")
+        imageView.addSubview(softEggButton)
         return imageView
     }()
     
@@ -132,6 +133,7 @@ class ViewController: UIViewController {
         let imageView = UIImageView(frame: ImageViewProperty().imageViewFrame)
         imageView.contentMode = .scaleAspectFit
         imageView.image = #imageLiteral(resourceName: "medium_egg")
+        imageView.addSubview(mediumEggButton)
         return imageView
     }()
     
@@ -139,6 +141,7 @@ class ViewController: UIViewController {
         let imageView = UIImageView(frame: ImageViewProperty().imageViewFrame)
         imageView.contentMode = .scaleAspectFit
         imageView.image = #imageLiteral(resourceName: "hard_egg")
+        imageView.addSubview(hardEggButton)
         return imageView
     }()
     
@@ -155,8 +158,8 @@ class ViewController: UIViewController {
         button.autoresizesSubviews = true
         button.backgroundColor = .clear
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        button.addSubview(softEggImageView)
-        button.addSubview(softTitle)
+//        button.addSubview(softEggImageView)
+//        button.addSubview(softTitle)
         return button
     }()
     
@@ -168,8 +171,8 @@ class ViewController: UIViewController {
         button.backgroundColor = .clear
         button.isEnabled = true
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        button.addSubview(mediumEggImageView)
-        button.addSubview(mediumTitle)
+//        button.addSubview(mediumEggImageView)
+//        button.addSubview(mediumTitle)
         return button
     }()
     
@@ -182,8 +185,8 @@ class ViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .clear
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        button.addSubview(hardEggImageView)
-        button.addSubview(hardTitle)
+//        button.addSubview(hardEggImageView)
+//        button.addSubview(hardTitle)
         return button
     }()
     
@@ -193,7 +196,7 @@ class ViewController: UIViewController {
     lazy var progressBar: UIProgressView = {
         let progressView = UIProgressView(progressViewStyle: .bar)
         progressView.center = view.center
-        progressView.setProgress(0.5, animated: true)
+        progressView.setProgress(0.0, animated: true)
         progressView.trackTintColor = .lightGray
         progressView.tintColor = .yellow
         return progressView
@@ -214,26 +217,26 @@ class ViewController: UIViewController {
             make.height.equalTo(10)
         }
         
-        softTitle.snp.makeConstraints { (make) in
-            make.centerX.equalTo(softEggImageView)
-            make.centerY.equalTo(softEggImageView)
-            make.height.equalTo(softEggImageView)
-            make.width.equalTo(softEggImageView)
-        }
-        
-        mediumTitle.snp.makeConstraints { (make) in
-            make.centerX.equalTo(mediumEggImageView)
-            make.centerY.equalTo(mediumEggImageView)
-            make.height.equalTo(mediumEggImageView)
-            make.width.equalTo(mediumEggImageView)
-        }
-        
-        hardTitle.snp.makeConstraints { (make) in
-            make.centerX.equalTo(hardEggImageView)
-            make.centerY.equalTo(hardEggImageView)
-            make.height.equalTo(hardEggImageView)
-            make.width.equalTo(hardEggImageView)
-        }
+//        softTitle.snp.makeConstraints { (make) in
+//            make.centerX.equalTo(softEggImageView)
+//            make.centerY.equalTo(softEggImageView)
+//            make.height.equalTo(softEggImageView)
+//            make.width.equalTo(softEggImageView)
+//        }
+//
+//        mediumTitle.snp.makeConstraints { (make) in
+//            make.centerX.equalTo(mediumEggImageView)
+//            make.centerY.equalTo(mediumEggImageView)
+//            make.height.equalTo(mediumEggImageView)
+//            make.width.equalTo(mediumEggImageView)
+//        }
+//
+//        hardTitle.snp.makeConstraints { (make) in
+//            make.centerX.equalTo(hardEggImageView)
+//            make.centerY.equalTo(hardEggImageView)
+//            make.height.equalTo(hardEggImageView)
+//            make.width.equalTo(hardEggImageView)
+//        }
         
         softEggButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(softEggImageView)
