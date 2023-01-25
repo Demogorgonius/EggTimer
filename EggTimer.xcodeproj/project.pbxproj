@@ -20,6 +20,7 @@
 		A57443542980358400F03B8E /* LabelProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57443532980358400F03B8E /* LabelProperty.swift */; };
 		A574435629803DE400F03B8E /* ButtonProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A574435529803DE400F03B8E /* ButtonProperty.swift */; };
 		A57443582980455F00F03B8E /* ImageViewProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57443572980455F00F03B8E /* ImageViewProperty.swift */; };
+		A574435A29811AEB00F03B8E /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A574435929811AEB00F03B8E /* alarm_sound.mp3 */; };
 		B63AB2F9BBA816F39DB16022 /* Pods_EggTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BBBC0AB0255CD31A6CB24A /* Pods_EggTimer.framework */; };
 		F0F46816A85A8AEA65B5ED10 /* Pods_EggTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9BA3DE94CCBF288E12B3F2 /* Pods_EggTimerTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		A57443532980358400F03B8E /* LabelProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProperty.swift; sourceTree = "<group>"; };
 		A574435529803DE400F03B8E /* ButtonProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProperty.swift; sourceTree = "<group>"; };
 		A57443572980455F00F03B8E /* ImageViewProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewProperty.swift; sourceTree = "<group>"; };
+		A574435929811AEB00F03B8E /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		D07BF4402FF6FD15EF8E611B /* Pods-EggTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.release.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.release.xcconfig"; sourceTree = "<group>"; };
 		E4745A4EB8FD8A1F120171DB /* Pods-EggTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.debug.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 		A5744321298003F700F03B8E /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A574435929811AEB00F03B8E /* alarm_sound.mp3 */,
 				A57443522980354F00F03B8E /* Service */,
 				A5744322298003F700F03B8E /* AppDelegate.swift */,
 				A5744324298003F700F03B8E /* SceneDelegate.swift */,
@@ -296,6 +299,7 @@
 			files = (
 				A574432F298003F900F03B8E /* LaunchScreen.storyboard in Resources */,
 				A574432C298003F900F03B8E /* Assets.xcassets in Resources */,
+				A574435A29811AEB00F03B8E /* alarm_sound.mp3 in Resources */,
 				A574432A298003F700F03B8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

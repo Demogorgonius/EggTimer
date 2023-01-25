@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     var timer = Timer()
     var player: AVAudioPlayer!
     var totalTime = 0
-    var secondPassed = 0
-   
+    var secondsPassed = 0
+    
     //MARK: - Titles
     
     lazy var mainLabel: UILabel = {
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         view.addSubview(mediumEggButton)
         return view
     }()
-
+    
     lazy var hardEggView: UIView = {
         let view = UIView(frame: ImageViewProperty().imageViewFrame)
         view.contentMode = .scaleToFill
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
         view.addSubview(hardEggButton)
         return view
     }()
-
+    
     
     lazy var softEggImageView: UIImageView = {
         let imageView = UIImageView(frame: ImageViewProperty().imageViewFrame)
@@ -173,7 +173,7 @@ class ViewController: UIViewController {
         return button
     }()
     
-
+    
     
     lazy var hardEggButton: UIButton = {
         let button = UIButton(frame: ButtonProperty().buttonFrame)
@@ -187,8 +187,8 @@ class ViewController: UIViewController {
         return button
     }()
     
-   
-//MARK: - Other UI elements
+    
+    //MARK: - Other UI elements
     
     lazy var progressBar: UIProgressView = {
         let progressView = UIProgressView(progressViewStyle: .bar)
@@ -198,8 +198,8 @@ class ViewController: UIViewController {
         progressView.tintColor = .yellow
         return progressView
     }()
- 
-//MARK: - ViewDidLoad
+    
+    //MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -265,18 +265,33 @@ class ViewController: UIViewController {
         
     }
     
-//MARK: - Methods
+    //MARK: - Methods
     
     @objc func buttonTapped(_ sender: UIButton!) {
-        switch sender.titleLabel?.text {
-        case "Soft":
-            mainLabel.text = "Soft"
-        case "Medium":
-            mainLabel.text = "Medium"
-        case "Hard":
-            mainLabel.text = "Hard"
-        default:
-            return
+        timer.invalidate()
+        let hardness = sender.currentTitle!
+        totalTime = eggTimes[hardness]!
+        
+        progressBar.progress = 0.0
+        secondsPassed = 0
+        mainLabel.text = hardness
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateTimer), userInfo:nil, repeats: true)
+        
+    }
+    
+    @objc func updateTimer() {
+        if secondsPassed < totalTime {
+            secondsPassed += 1
+            progressBar.progress = Float(secondsPassed) / Float(totalTime)
+            print(Float(secondsPassed) / Float(totalTime))
+        } else {
+            timer.invalidate()
+            mainLabel.text = "DONE!"
+            
+            let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
         }
     }
     
